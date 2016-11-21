@@ -784,15 +784,6 @@
                                                 <color key="backgroundColor" name="controlColor" catalog="System" colorSpace="catalog"/>
                                             </textFieldCell>
                                         </textField>
-                                        <textField verticalHuggingPriority="750" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="XrK-Pa-PN0">
-                                            <rect key="frame" x="59" y="90" width="441" height="22"/>
-                                            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMinY="YES"/>
-                                            <textFieldCell key="cell" scrollable="YES" lineBreakMode="clipping" selectable="YES" editable="YES" sendsActionOnEndEditing="YES" state="on" borderStyle="bezel" drawsBackground="YES" id="B8k-or-IPr">
-                                                <font key="font" metaFont="system"/>
-                                                <color key="textColor" name="textColor" catalog="System" colorSpace="catalog"/>
-                                                <color key="backgroundColor" name="textBackgroundColor" catalog="System" colorSpace="catalog"/>
-                                            </textFieldCell>
-                                        </textField>
                                         <textField verticalHuggingPriority="750" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="USW-nn-04U">
                                             <rect key="frame" x="59" y="122" width="441" height="22"/>
                                             <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMinY="YES"/>
@@ -874,6 +865,15 @@
                                                 <color key="backgroundColor" name="controlColor" catalog="System" colorSpace="catalog"/>
                                             </textFieldCell>
                                         </textField>
+                                        <textField verticalHuggingPriority="750" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="XrK-Pa-PN0">
+                                            <rect key="frame" x="59" y="90" width="441" height="22"/>
+                                            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMinY="YES"/>
+                                            <textFieldCell key="cell" scrollable="YES" lineBreakMode="clipping" selectable="YES" editable="YES" sendsActionOnEndEditing="YES" state="on" borderStyle="bezel" drawsBackground="YES" id="B8k-or-IPr">
+                                                <font key="font" metaFont="system"/>
+                                                <color key="textColor" name="textColor" catalog="System" colorSpace="catalog"/>
+                                                <color key="backgroundColor" name="textBackgroundColor" catalog="System" colorSpace="catalog"/>
+                                            </textFieldCell>
+                                        </textField>
                                     </subviews>
                                 </view>
                             </box>
@@ -911,9 +911,26 @@
                                     <behavior key="behavior" pushIn="YES" lightByBackground="YES" lightByGray="YES"/>
                                     <font key="font" metaFont="system"/>
                                 </buttonCell>
+                                <connections>
+                                    <action selector="testButton:" target="XfG-lQ-9wD" id="T3j-ta-AYS"/>
+                                </connections>
                             </button>
                         </subviews>
                     </view>
+                    <connections>
+                        <outlet property="match0" destination="XU6-gL-NCT" id="myR-KH-0uV"/>
+                        <outlet property="match1" destination="O4y-LY-aVa" id="VtX-Ql-CUm"/>
+                        <outlet property="match2" destination="ZPN-pW-fbm" id="URI-pS-tPX"/>
+                        <outlet property="match3" destination="oRP-AK-qi7" id="0Zd-RO-lZv"/>
+                        <outlet property="match4" destination="UoG-jr-teP" id="tda-iZ-MwU"/>
+                        <outlet property="match5" destination="mpf-C1-slb" id="JjD-L5-2h6"/>
+                        <outlet property="match6" destination="USW-nn-04U" id="Y5B-EJ-mBf"/>
+                        <outlet property="match7" destination="XrK-Pa-PN0" id="bJJ-su-EVp"/>
+                        <outlet property="match8" destination="s1d-v6-OPl" id="XGs-yC-ErN"/>
+                        <outlet property="match9" destination="47F-qn-zIh" id="NZK-De-xnF"/>
+                        <outlet property="matchPattern" destination="Gbr-bg-bo5" id="VRr-hb-sln"/>
+                        <outlet property="matchText" destination="kf6-qR-u6e" id="gGb-aQ-kFP"/>
+                    </connections>
                 </viewController>
                 <customObject id="rPt-NT-nkU" userLabel="First Responder" customClass="NSResponder" sceneMemberID="firstResponder"/>
             </objects>
