@@ -75,11 +75,6 @@ class ViewController: NSViewController {
         }
     }
 
-    override func viewDidAppear() {
-        super.viewDidAppear()
-        self.view.window?.styleMask = [NSWindowStyleMask.titled, NSWindowStyleMask.closable, NSWindowStyleMask.miniaturizable]
-    }
-    
     override func viewDidLoad() {
         super.viewDidLoad()
 
