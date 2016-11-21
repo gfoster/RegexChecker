@@ -32,8 +32,6 @@ class ViewController: NSViewController {
                 match8, match9]
     }
     
-    @IBOutlet var fooFields: [NSTextField]!
-    
     @IBAction func testButton(_ sender: Any) {
         // triggers when the "test pattern" button is pressed
         let text = matchText.stringValue
@@ -75,6 +73,11 @@ class ViewController: NSViewController {
                 break
             }
         }
+    }
+
+    override func viewDidAppear() {
+        super.viewDidAppear()
+        self.view.window?.styleMask = [NSWindowStyleMask.titled, NSWindowStyleMask.closable, NSWindowStyleMask.miniaturizable]
     }
     
     override func viewDidLoad() {
